@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="scripts/script-char.js"></script>
+<!--     <script src="scripts/script-map.js"></script> -->
+  </head>
+
+
+  <body onload="javascript:onStart();">
+    <div class="wrapper">
+
+      <aside id="char-drop-area" class="aside aside-char">
+        Players
+
+        <input type="file" id="fileElem" multiple accept="image/*" onchange="handleFiles(this.files)">
+        <label class="button" for="fileElem" id="dropLabel">Drop or click here to add images</label>
+
+        <div id="gallery" />
+        </div>
+
+      </aside>
+
+      <div class="map">
+        <div class="map-drop-area">
+
+        </div>
+      </div>
+
+    <aside class="aside aside-mobs">
+
+    </aside>
+
+    </div>
+  </body>
+</html>
