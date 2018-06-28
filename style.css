@@ -5,76 +5,94 @@ body {
 }
 
 .button {
-  list-style:    none;
-  font-family:   Geneva, Arial, Helvetica, sans-serif;
-  color:         #fff;
-  display:       inline-block;
-  text-align:    center;
-  padding-top:   10px;
-  cursor:        pointer;
-  height:        calc(100% - 30px);
+  list-style:        none;
+  font-family:       Geneva, Arial, Helvetica, sans-serif;
+  color:             #fff;
+  display:           inline-block;
+  text-align:        center;
+  padding-top:       10px;
+  cursor:            pointer;
+  height:            calc(100% - 30px);
+}
+
+.zoom-button {
+  position:          absolute;
+  background:        rgba(255, 255, 255, 0);
+  top:               calc(100% - 70px);
+  cursor:            pointer;
+  border-radius:     0px;
+  height:            45px;
+  width:             45px;
+}
+
+#plus-button {
+  right:             290px;
+}
+
+#minus-button {
+  right:             230px;
+}
+
+.buttonMap {
+  list-style:        none;
+  font-family:       Geneva, Arial, Helvetica, sans-serif;
+  color:             #fff;
+  display:           inline-block;
+  text-align:        center;
+  width:             100%;
+  padding-top:       10px;
+  cursor:            pointer;
+  height:            100%;
 }
 
 #gallery {
-  list-style:   none;
-  position:     absolute;
-  left:         0px;
-  top:          30px;
-  padding:      5px;
+  list-style:       none;
+  position:         absolute;
+  left:             0px;
+  top:              30px;
+  padding:          5px;
 }
 
-#fileElem {
-  display: none;
+.fileElem {
+  display:         none;
 }
 
 .map-drop-area {
-  padding:       10px;
-  background:    rgba(255, 255, 255, .25);
-  border:        2px dashed #fff;
-  border-radius: 20px;
-  height:        100%;
+  background:      rgba(255, 255, 255, .25);
+  border:          2px dashed #fff;
+  border-radius:   20px;
+  height:          100%;
 }
 
 .wrapper {
-  display:       flex;
-  flex-flow:     row wrap;
-  font-weight:   bold;
-  text-align:    center;
+  display:         flex;
+  flex-flow:       row wrap;
+  font-weight:     bold;
+  text-align:      center;
 }
 
 .map {
-  margin: 80px 10px 20px 20px;
-  height: 75vh;
-}
-
-.aside-char {
-  position:       relative;
-  display:        block;
-  font-family:    Geneva, Arial, Helvetica, sans-serif;
-  color:          #fff;
-  padding-top:    10px;
-  padding-bottom:    10px;
-  background:     rgba(255, 255, 255, .25);
-  border:         2px dashed #fff;
-  width:          130px;
-  border-radius:  20px;
-  margin:         80px 10px 20px 20px;
-  height:         75vh;
-}
-
-.aside-mobs {
-  padding:       10px;
-  background:    rgba(255, 255, 255, .25);
-  border:        2px dashed #fff;
-  width:         130px;
-  border-radius: 20px;
-  margin:        80px 10px 20px 20px;
-  height:        75vh;
+  padding:         20px;
+  margin:          40px 10px 20px 20px;
+  height:          80vh;
+  overflow:        hidden;
 }
 
 @media all  {
   .aside {
-    flex: none;
+    flex:           none;
+    position:       relative;
+    display:        block;
+    font-family:    Geneva, Arial, Helvetica, sans-serif;
+    color:          #fff;
+    padding-top:    10px;
+    padding-bottom: 10px;
+    background:     rgba(255, 255, 255, .25);
+    border:         2px dashed #fff;
+    width:          130px;
+    border-radius:  20px;
+    margin:         40px 10px 20px 20px;
+    height:         80vh;
   }
 }
 

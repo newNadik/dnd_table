@@ -4,7 +4,7 @@
   <head>
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="scripts/script-char.js"></script>
-<!--     <script src="scripts/script-map.js"></script> -->
+    <script src="scripts/script-map.js"></script>
   </head>
 
 
@@ -14,19 +14,29 @@
       <aside id="char-drop-area" class="aside aside-char">
         Players
 
-        <input type="file" id="fileElem" multiple accept="image/*" onchange="handleFiles(this.files)">
-        <label class="button" for="fileElem" id="dropLabel">Drop or click here to add images</label>
+        <input type="file" class="fileElem" id="fileElem" multiple accept="image/*" onchange="handleCharFiles(this.files)">
+        <label class="button" for="fileElem" id="dropCharLabel">
+          Click, or drop images here to upload
+        </label>
 
-        <div id="gallery" />
+        <div id="gallery" class="gallery">
         </div>
 
       </aside>
 
-      <div class="map">
-        <div class="map-drop-area">
+      <div class="map" id="map-area">
+        <div id="map-drop-area" class="map-drop-area">
+
+          <input class="fileElem" type="file" id="fileElemMap" multiple accept="image/*" onchange="handleMapFile(this.files)">
+          <label class="buttonMap" for="fileElemMap" id="dropMapLabel">
+            Click, or drop Map image here
+          </label>
 
         </div>
       </div>
+
+      <img class="zoom-button" id="plus-button" src="images/plus.png" alt="">
+      <img class="zoom-button" id="minus-button" src="images/minus.png" alt="">
 
     <aside class="aside aside-mobs">
 
